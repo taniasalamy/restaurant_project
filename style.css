@@ -1,0 +1,440 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFF8EC;
+    color: #123047;
+    line-height: 1.6;
+}
+
+.arabic-text {
+    direction: rtl;
+    font-size: 16px;
+}
+
+
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 8%;
+    background-color: #123047;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.logo span {
+    color: #F4A261;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #F4A261;
+}
+
+.nav-button {
+    background-color: #F4A261;
+    color: #123047;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+
+
+.hero {
+    min-height: 550px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    padding: 60px 20px;
+
+    background:
+        linear-gradient(
+            rgba(18, 48, 71, 0.75),
+            rgba(18, 48, 71, 0.75)
+        ),
+        url("images/restaurant.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+}
+
+.hero-content {
+    max-width: 750px;
+}
+
+.welcome {
+    color: #FFE0A3;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero h2 {
+    color: #FFE0A3;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+.main-button {
+    display: inline-block;
+
+    margin-top: 30px;
+    padding: 14px 25px;
+
+    background-color: #F4A261;
+    color: #123047;
+
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+}
+
+.main-button:hover {
+    background-color: #FFE0A3;
+}
+
+
+
+.welcome-section {
+    text-align: center;
+    padding: 65px 10%;
+}
+
+.welcome-section h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+
+
+
+.small-title {
+    color: #168AAD;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-heading h2 {
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+.menu-section {
+    padding: 70px 8%;
+    background-color: #FFFDF7;
+}
+
+.category-title {
+    font-size: 24px;
+    margin: 35px 0 20px;
+    color: #168AAD;
+}
+
+.menu-container {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(230px, 1fr)
+    );
+
+    gap: 25px;
+}
+
+.food-card {
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+
+    transition: transform 0.3s;
+}
+
+.food-card:hover {
+    transform: translateY(-5px);
+}
+
+.food-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.food-info {
+    padding: 20px;
+}
+
+.food-info h3 {
+    margin-bottom: 10px;
+    font-size: 21px;
+}
+
+.food-info p {
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.food-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 15px;
+}
+
+.food-bottom span {
+    color: #168AAD;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.food-bottom button {
+    background-color: #F4A261;
+    color: #123047;
+
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.food-bottom button:hover {
+    background-color: #FFE0A3;
+}
+
+
+
+.about-section {
+    padding: 80px 10%;
+    text-align: center;
+    background-color: #E8F4F5;
+}
+
+.about-content {
+    max-width: 750px;
+    margin: auto;
+}
+
+.about-content h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    margin-bottom: 15px;
+}
+
+
+
+.contact-section {
+    padding: 70px 8%;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+
+    max-width: 1000px;
+    margin: auto;
+}
+
+.contact-details {
+    padding: 25px;
+}
+
+.contact-details h3 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.contact-details p {
+    margin-bottom: 15px;
+}
+
+form {
+    background-color: white;
+    padding: 25px;
+    border-radius: 15px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 12px;
+
+    margin-top: 8px;
+
+    border: 1px solid #ccc;
+    border-radius: 8px;
+
+    font-family: Arial, sans-serif;
+}
+
+form textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+form button {
+    margin-top: 20px;
+    width: 100%;
+
+    padding: 13px;
+
+    background-color: #168AAD;
+    color: white;
+
+    border: none;
+    border-radius: 8px;
+
+    cursor: pointer;
+    font-weight: bold;
+}
+
+form button:hover {
+    background-color: #123047;
+}
+
+#formMessage {
+    margin-top: 15px;
+    color: #168AAD;
+}
+
+
+footer {
+    background-color: #123047;
+    color: white;
+
+    text-align: center;
+    padding: 35px 15px;
+}
+
+footer h2 {
+    color: #F4A261;
+    margin-bottom: 10px;
+}
+
+.copyright {
+    margin-top: 20px;
+    font-size: 13px;
+    color: #ddd;
+}
+
+
+/* MOBILE RESPONSIVE DESIGN */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero {
+        min-height: 450px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+
+    .menu-section {
+        padding: 50px 5%;
+    }
+
+    .section-heading h2 {
+        font-size: 28px;
+    }
+
+}
+
+@media (max-width: 400px) {
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .logo {
+        font-size: 21px;
+    }
+
+    .nav-links {
+        gap: 10px;
+    }
+
+}
